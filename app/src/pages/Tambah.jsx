@@ -3,8 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import useKoleksi from '../hooks/useKoleksi.js'
 import './Tambah.css'
 
-const AWAL = { judul: '', kategori: 'Kuliah', tenggat: '', prioritas: 'sedang' }
-
+const AWAL = { judul: '', kategori: 'Portofolio', teknologi: 'HTML', tahun: '', tautan: '' }
 export default function Tambah() {
   const { tambah } = useKoleksi()
   const navigate = useNavigate()
@@ -33,18 +32,28 @@ export default function Tambah() {
 
       <label htmlFor="kategori">Kategori</label>
       <select id="kategori" name="kategori" value={form.kategori} onChange={ubah}>
-        <option>Kuliah</option>
-        <option>Organisasi</option>
+        <option>Produktivitas</option>
+        <option>Kuliner</option>
+        <option>Keuangan</option>
+        <option>E-Commerce</option>
+        <option>Layanan</option>
+        <option>Utilitas</option>
+        <option>Pendidikan</option>
+        <option>Portofolio</option>
       </select>
 
-      <label htmlFor="tenggat">Tenggat</label>
-      <input id="tenggat" name="tenggat" type="date" value={form.tenggat} onChange={ubah} />
+      <label htmlFor="tahun">Tahun</label>
+      <input id="tahun" name="tahun" type="number" value={form.tahun} onChange={ubah} />
 
-      <label htmlFor="prioritas">Prioritas</label>
-      <select id="prioritas" name="prioritas" value={form.prioritas} onChange={ubah}>
-        <option value="rendah">Rendah</option>
-        <option value="sedang">Sedang</option>
-        <option value="tinggi">Tinggi</option>
+      <label htmlFor="tautan">Tautan</label>
+      <input id="tautan" name="tautan" value={form.tautan} onChange={ubah} />
+
+      <label htmlFor="teknologi">Teknologi</label>
+      <select id="teknologi" name="teknologi" value={form.teknologi} onChange={ubah}>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="GSAP">GSAP</option>
       </select>
 
       <button type="submit">Simpan</button>

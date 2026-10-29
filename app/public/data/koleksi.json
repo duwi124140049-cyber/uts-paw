@@ -4,80 +4,80 @@
     "id": "1",
     "judul": "Aplikasi Manajemen Tugas Kuliah",
     "kategori": "Produktivitas",
-    "Teknologi": "React, Node.js, MongoDB",
-    "Tahun": "2024",
-    "Tautan": "https://github.com/username/manajemen-tugas-kuliah"
+    "teknologi": "React, Node.js, MongoDB",
+    "tahun": "2024",
+    "tautan": "https://github.com/username/manajemen-tugas-kuliah"
   },
   {
     "id": "2",
     "judul": "Katalog Resep Masakan Nusantara",
     "kategori": "Kuliner",
-    "Teknologi": "Next.js, Tailwind CSS, Firebase",
-    "Tahun": "2024",
-    "Tautan": "https://github.com/username/katalog-resep-nusantara"
+    "teknologi": "Next.js, Tailwind CSS, Firebase",
+    "tahun": "2024",
+    "tautan": "https://github.com/username/katalog-resep-nusantara"
   },
   {
     "id": "3",
     "judul": "Dashboard Pencatat Keuangan Mahasiswa",
     "kategori": "Keuangan",
-    "Teknologi": "Vue.js, Chart.js, Laravel",
-    "Tahun": "2024",
-    "Tautan": "https://github.com/username/dashboard-keuangan-mahasiswa"
+    "teknologi": "Vue.js, Chart.js, Laravel",
+    "tahun": "2024",
+    "tautan": "https://github.com/username/dashboard-keuangan-mahasiswa"
   },
   {
     "id": "4",
     "judul": "Website Toko Online UMKM Lokal",
     "kategori": "E-Commerce",
-    "Teknologi": "Laravel, MySQL, Bootstrap",
-    "Tahun": "2023",
-    "Tautan": "https://github.com/username/toko-online-umkm"
+    "teknologi": "Laravel, MySQL, Bootstrap",
+    "tahun": "2023",
+    "tautan": "https://github.com/username/toko-online-umkm"
   },
   {
     "id": "5",
     "judul": "Aplikasi Jadwal Kuliah dan Reminder",
     "kategori": "Produktivitas",
-    "Teknologi": "Flutter, Firebase, Local Notifications",
-    "Tahun": "2023",
-    "Tautan": "https://github.com/username/jadwal-kuliah-reminder"
+    "teknologi": "Flutter, Firebase, Local Notifications",
+    "tahun": "2023",
+    "tautan": "https://github.com/username/jadwal-kuliah-reminder"
   },
   {
     "id": "6",
     "judul": "Portal Perpustakaan Mini",
     "kategori": "Pendidikan",
-    "Teknologi": "PHP, MySQL, Bootstrap",
-    "Tahun": "2023",
-    "Tautan": "https://github.com/username/portal-perpustakaan-mini"
+    "teknologi": "PHP, MySQL, Bootstrap",
+    "tahun": "2023",
+    "tautan": "https://github.com/username/portal-perpustakaan-mini"
   },
   {
     "id": "7",
     "judul": "Aplikasi Cuaca dan Prakiraan Harian",
     "kategori": "Utilitas",
-    "Teknologi": "JavaScript, OpenWeather API, CSS",
-    "Tahun": "2024",
-    "Tautan": "https://github.com/username/aplikasi-cuaca-harian"
+    "teknologi": "JavaScript, OpenWeather API, CSS",
+    "tahun": "2024",
+    "tautan": "https://github.com/username/aplikasi-cuaca-harian"
   },
   {
     "id": "8",
     "judul": "Platform Booking Lapangan Olahraga",
     "kategori": "Layanan",
-    "Teknologi": "React, Express.js, PostgreSQL",
-    "Tahun": "2025",
-    "Tautan": "https://github.com/username/booking-lapangan-olahraga"
+    "teknologi": "React, Express.js, PostgreSQL",
+    "tahun": "2025",
+    "tautan": "https://github.com/username/booking-lapangan-olahraga"
   },
   {
     "id": "9",
     "judul": "Aplikasi Catatan Belajar dengan Tag dan Pencarian",
     "kategori": "Pendidikan",
-    "Teknologi": "React Native, SQLite, Fuse.js",
-    "Tahun": "2025",
-    "Tautan": "https://github.com/username/catatan-belajar-tag"
+    "teknologi": "React Native, SQLite, Fuse.js",
+    "tahun": "2025",
+    "tautan": "https://github.com/username/catatan-belajar-tag"
   },
   {
     "id": "10",
     "judul": "Website Portofolio Interaktif Mahasiswa",
     "kategori": "Portofolio",
-    "Teknologi": "HTML, CSS, JavaScript, GSAP",
-    "Tahun": "2025",
-    "Tautan": "https://github.com/username/portofolio-interaktif"
+    "teknologi": "HTML, CSS, JavaScript, GSAP",
+    "tahun": "2025",
+    "tautan": "https://github.com/username/portofolio-interaktif"
   }
 ]
