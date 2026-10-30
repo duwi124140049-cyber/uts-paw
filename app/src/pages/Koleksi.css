@@ -1,0 +1,105 @@
+
+section {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #fff0f6, #ffffff, #ffe4ed);
+  color: #5c3042;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+section h1 {
+  margin: 0 0 30px;
+  padding-bottom: 18px;
+  color: #d94f83;
+  font-size: 32px;
+  font-weight: 700;
+  border-bottom: 3px solid #f7c1d5;
+}
+
+.alat-koleksi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+  padding: 22px;
+  background: linear-gradient(135deg, #ffffff, #fff5f8);
+  border: 1px solid #f8cfe0;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(217, 79, 131, 0.08);
+}
+
+.alat-koleksi select {
+  min-width: 170px;
+  padding: 13px 16px;
+  color: #a63f6b;
+  background: #fff0f6;
+  border: 1px solid #efbfd2;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.alat-koleksi select:hover,
+.alat-koleksi select:focus {
+  background: #ffe4ee;
+  border-color: #e879a5;
+  box-shadow: 0 0 0 4px rgba(232, 121, 165, 0.12);
+}
+
+.daftar-kartu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  align-items: stretch;
+  gap: 24px;
+}
+
+section > p {
+  margin: 20px 0;
+  padding: 24px;
+  color: #80566a;
+  background: linear-gradient(135deg, #ffffff, #fff0f6);
+  border: 1px solid #f8cfe0;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(217, 79, 131, 0.08);
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 30px 18px;
+  }
+
+  section h1 {
+    font-size: 28px;
+  }
+
+  .alat-koleksi {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px;
+  }
+
+  .alat-koleksi select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .daftar-kartu {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .daftar-kartu {
+    grid-template-columns: 1fr;
+  }
+}

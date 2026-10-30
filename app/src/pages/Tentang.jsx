@@ -1,7 +1,8 @@
 import mahasiswa from '../../mahasiswa.json'
+import './Tentang.css'
 
 // Ganti dengan alamat repo fork kamu.
-const REPO = 'https://github.com/USERNAME/uts-paw'
+const REPO = 'https://duwi124140049-cyber.github.io/uts-paw/'
 
 export default function Tentang() {
   const { nama, nim, kelas, tema } = mahasiswa

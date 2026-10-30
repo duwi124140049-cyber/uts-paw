@@ -1,0 +1,81 @@
+
+section {
+  min-height: 100vh;
+  padding: 50px 40px;
+  background: linear-gradient(135deg, #fff0f6, #ffffff, #ffe4ed);
+  color: #5c3042;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+section h1 {
+  margin: 0 0 30px;
+  padding-bottom: 18px;
+  color: #d94f83;
+  font-size: 36px;
+  font-weight: 700;
+  border-bottom: 3px solid #f7c1d5;
+}
+
+section p {
+  margin: 20px 0;
+  padding: 25px;
+  color: #80566a;
+  background: linear-gradient(135deg, #fffafd, #fff0f6);
+  border: 1px solid #f8cfe0;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(217, 79, 131, 0.08);
+  font-size: 16px;
+  line-height: 1.8;
+  transition: 0.3s ease;
+}
+
+section p:hover {
+  border-color: #ed9fbd;
+  box-shadow: 0 8px 22px rgba(217, 79, 131, 0.13);
+}
+
+section a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 16px 28px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #f58bb3, #d94f83);
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(217, 79, 131, 0.2);
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+section a:hover {
+  background: linear-gradient(135deg, #e879a5, #bf376c);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(217, 79, 131, 0.25);
+}
+
+section a:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 30px 18px;
+  }
+
+  section h1 {
+    font-size: 28px;
+  }
+
+  section p {
+    padding: 18px;
+    font-size: 14px;
+  }
+
+  section a {
+    padding: 13px 22px;
+    font-size: 14px;
+  }
+}

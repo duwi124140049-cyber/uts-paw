@@ -1,105 +1,162 @@
+
 .kerangka {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  align-items: center;
+  padding: 24px;
+  background: linear-gradient(135deg, #fff0f6, #ffffff, #ffe4ed);
+  color: #5c3042;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 .kepala {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 22px 30px;
+  background: linear-gradient(135deg, #ffffff, #fff5f8);
+  border: 1px solid #f8cfe0;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(217, 79, 131, 0.12);
+  box-sizing: border-box;
+}
+
+.kepala strong {
+  color: #d94f83;
+  font-size: 28px;
+  font-weight: 700;
+  white-space: nowrap;
 }
 
 .menu {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 12px 18px;
+  color: #c74779;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.menu a:hover {
+  color: #bf376c;
+  background: #ffe4ee;
+  border-color: #f8cfe0;
+  transform: translateY(-2px);
 }
 
 .menu a.active {
-  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(135deg, #f58bb3, #d94f83);
+  box-shadow: 0 5px 14px rgba(217, 79, 131, 0.2);
 }
 
 .isi {
   flex: 1;
   width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #f8cfe0;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(217, 79, 131, 0.06);
+  box-sizing: border-box;
+}
+
+.isi > section {
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
 .kaki {
-  padding: 1rem 1.5rem;
-  border-top: 1px solid #dcdcdc;
-  color: #57606a;
-  font-size: 0.9rem;
-}
-
-.aksi {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.isi dl {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  gap: 0.25rem 1rem;
-}
-
-.isi dt {
-  font-weight: 600;
-}
-
-.isi dd {
-  margin: 0;
-}
-
-.daftar-kartu {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.kartu {
-  padding: 1rem;
-  border: 1px solid #dcdcdc;
-  border-radius: 8px;
-}
-
-.kartu h3 {
-  margin: 0 0 0.25rem;
-  font-size: 1.05rem;
-}
-
-.kartu p {
-  margin: 0;
-  color: #57606a;
-}
-
-.alat-koleksi {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-bottom: 1rem;
-}
-
-.alat-koleksi input,
-.alat-koleksi select {
-  padding: 0.5rem 0.75rem;
-  border: 1px solid #c4c4c4;
-  border-radius: 6px;
-  font: inherit;
+  width: 100%;
+  padding: 20px;
+  color: #a65d80;
+  background: linear-gradient(135deg, #ffffff, #fff0f6);
+  border: 1px solid #f8cfe0;
+  border-radius: 16px;
+  box-shadow: 0 5px 16px rgba(217, 79, 131, 0.08);
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
-  .kepala {
-    flex-direction: column;
-    gap: 0.5rem;
+  .kerangka {
+    padding: 14px;
   }
 
-  .daftar-kartu {
-    grid-template-columns: 1fr;
+  .kepala {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+  }
+
+  .kepala strong {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .menu {
+    gap: 8px;
+  }
+
+  .menu a {
+    padding: 10px 13px;
+    font-size: 13px;
+  }
+
+  .isi {
+    margin: 18px 0;
+    padding: 18px;
+  }
+
+  .kaki {
+    padding: 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .menu a {
+    text-align: center;
+  }
+
+  .menu a:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .isi {
+    padding: 14px;
   }
 }

@@ -1,5 +1,6 @@
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import useKoleksi from '../hooks/useKoleksi.js'
+import './Detail.css'
 
 export default function Detail() {
   const { id } = useParams()
@@ -25,24 +26,24 @@ export default function Detail() {
   }
 
   return (
-    <section>
-      <h1>{item.judul}</h1>
-      <dl>
-        <dt>Kategori</dt>
-        <dd>{item.kategori}</dd>
-        <dt>Teknologi</dt>
-        <dd>{item.teknologi}</dd>
-        <dt>Tahun</dt>
-        <dd>{item.tahun}</dd>
-        <dt>Tautan</dt>
-        <dd>{item.tautan}</dd>
-      </dl>
-      <div className="aksi">
-        <button type="button" onClick={konfirmasiHapus}>
-          Hapus
-        </button>
-        <Link to="/koleksi">Kembali</Link>
-      </div>
-    </section>
-  )
+  <section id="detail">
+    <h1>{item.judul}</h1>
+    <dl id="detail-info">
+      <dt>Kategori</dt>
+      <dd>{item.kategori}</dd>
+      <dt>Teknologi</dt>
+      <dd>{item.teknologi}</dd>
+      <dt>Tahun</dt>
+      <dd>{item.tahun}</dd>
+      <dt>Tautan</dt>
+      <dd>{item.tautan}</dd>
+    </dl>
+    <div id="detail-aksi">
+      <button type="button" onClick={konfirmasiHapus}>
+        Hapus
+      </button>
+      <Link to="/koleksi">Kembali</Link>
+    </div>
+  </section>
+)
 }
