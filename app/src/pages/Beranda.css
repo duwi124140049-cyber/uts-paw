@@ -1,5 +1,4 @@
-
-section {
+.section {
   min-height: 100vh;
   padding: 50px 40px;
   background: linear-gradient(135deg, #fff0f6, #ffffff, #ffe4ed);
@@ -8,7 +7,7 @@ section {
   box-sizing: border-box;
 }
 
-section h1 {
+.section h1 {
   margin: 0 0 30px;
   padding-bottom: 18px;
   color: #d94f83;
@@ -17,7 +16,7 @@ section h1 {
   border-bottom: 3px solid #f7c1d5;
 }
 
-section p {
+.section p {
   margin: 20px 0;
   padding: 25px;
   color: #80566a;
@@ -30,12 +29,12 @@ section p {
   transition: 0.3s ease;
 }
 
-section p:hover {
+.section p:hover {
   border-color: #ed9fbd;
   box-shadow: 0 8px 22px rgba(217, 79, 131, 0.13);
 }
 
-section a {
+.section a {
   display: inline-block;
   margin-top: 20px;
   padding: 16px 28px;
@@ -50,31 +49,31 @@ section a {
   transition: 0.3s ease;
 }
 
-section a:hover {
+.section a:hover {
   background: linear-gradient(135deg, #e879a5, #bf376c);
   transform: translateY(-3px);
   box-shadow: 0 10px 22px rgba(217, 79, 131, 0.25);
 }
 
-section a:active {
+.section a:active {
   transform: translateY(0);
 }
 
 @media (max-width: 768px) {
-  section {
+  .section {
     padding: 30px 18px;
   }
 
-  section h1 {
+  .section h1 {
     font-size: 28px;
   }
 
-  section p {
+  .section p {
     padding: 18px;
     font-size: 14px;
   }
 
-  section a {
+  .section a {
     padding: 13px 22px;
     font-size: 14px;
   }
